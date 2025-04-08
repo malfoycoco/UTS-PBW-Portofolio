@@ -1,0 +1,189 @@
+:root {
+    --cream: #F4F2EF;
+    --pink-bold: #CD4662;
+    --pink-soft: #F4DBDB;
+    --green-soft: #AEC289;
+  }
+  
+  body {
+    background-color: var(--cream);
+    color: var(--pink-bold);
+  }
+  
+  .navbar {
+    background-color: var(--cream);
+    color: var(--pink-bold);
+  }
+
+  #portfolio {
+    padding-top: 20px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  #prestasi {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  
+  
+  .navbar a:hover {
+    color: var(--pink-bold);
+  }
+  
+  .btn-primary {
+    background-color: var(--green-soft);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--pink-bold);
+  }
+  
+  .card {
+    background-color: var(--pink-soft);
+    border: 1px solid var(--green-soft);
+  }
+  
+  footer {
+    background-color: var(--green-soft);
+    color: white;
+  }
+
+  .custom-navbar {
+    background-color: #AEC289;
+    color: #ffffff;
+  }
+  
+  .jumbotron {
+    padding-top: 5rem;
+    background-color:#F4DBDB ;
+  }
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }  
+
+  .custom-thumbnail {
+    border: 3px solid #AEC289;
+    box-shadow: 0 4px 8px rgba(180, 18, 18, 0.1);
+    margin-top: 30px;
+  }
+
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  #portfolio {
+   background-color: #B7D487; 
+  }
+
+.prestasi-section {
+  background-color: #F4DBDB;
+}
+
+.custom-card {
+  background-color: #F4F2EF;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.text-pink {
+  color: #D95377;
+}
+
+.text-matcha {
+  color: #4B8B64 ; /* atau bisa pakai kode langsung */
+  /* color: #AEC289; */
+  font-weight: 600;
+}
+
+
+.contact-section {
+  background-color: #F4F2EF;
+}
+
+.btn-kembali {
+  background-color: var(--green-soft);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-kembali:hover {
+  background-color: #CD4662;
+  color: white;
+}
+
+.contact-box {
+  background-color: var(--pink-soft);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card-img-top,
+.clickable-img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+#portfolio .card-img-top:hover,
+#portfolio .clickable-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 137, 187, 0.4); 
+  border-color: #FF89BB; 
+}
+
+#prestasi .card-img-top:hover,
+#prestasi .clickable-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(133, 163, 137, 0.4); 
+  border-color: #85A389; 
+}
+
+section {
+  scroll-margin-top: 100px; 
+}
+
+.bg-matcha {
+  background-color: #cfe3c2;
+  color: #2e4f2f;
+}
+

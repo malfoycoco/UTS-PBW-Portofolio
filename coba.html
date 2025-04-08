@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTS - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">⋆˙⟡ Shofi Shulhiyana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prestasi">Prestasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir navbar -->
+
+  <!-- jumbotron/beranda -->
+  <section id="beranda" class="jumbotron text-center">
+    <img src="img/kebaya potrait.jpg" alt="Shofi Shulhiyana" width="250" class="rounded-circle img-thumbnail custom-thumbnail">
+    <h1 class="display-4">Shofi Shulhiyana</h1>
+    <p class="lead mx-auto" style="max-width: 700px;"> Information Systems Student at University of Singaperbangsa Karawang | PMM 4 Awardee at Udayana University | Intern at Ministry of Communications and Informatics | Passionate about Machine Learning field</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#B7D487" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,192C384,181,480,107,576,112C672,117,768,203,864,202.7C960,203,1056,117,1152,101.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+  <!-- akhir jumbotron/beranda -->
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio-section py-5">
+  <div class="container">
+    <h2 class="text-center text-pink mb-5">My Projects</h2>
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="/img/dashboard interaktif.png" class="card-img-top clickable-img"
+               alt="Dashboard Interaktif" data-bs-toggle="modal" data-bs-target="#dashboardModal">
+          <div class="card-body">
+            <h5 class="card-title text-pink">Dashboard Interaktif</h5>
+            <p class="card-text">
+              Proyek ini menampilkan dashboard interaktif yang dikembangkan menggunakan Streamlit, sebuah framework Python untuk membangun aplikasi web data. Dashboard ini digunakan untuk menyajikan hasil analisis data secara real-time dalam bentuk visualisasi yang menarik dan mudah dipahami, seperti grafik, tabel, dan metrik. Tujuannya adalah untuk membantu pengambilan keputusan berbasis data secara lebih efektif dan efisien.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="/img/klasifikasi data.jpg" class="card-img-top clickable-img"
+               alt="Klasifikasi Data" data-bs-toggle="modal" data-bs-target="#klasifikasiModal" style="height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title text-pink">Klasifikasi Data</h5>
+            <p class="card-text">
+              Pada proyek ini, saya membangun model machine learning menggunakan Python dan pustaka Scikit-learn untuk melakukan klasifikasi data. Model ini mampu memprediksi hasil dari suatu dataset berdasarkan pola yang telah dipelajari dari data sebelumnya. Prosesnya mencakup data preprocessing, pelatihan model, evaluasi akurasi, dan visualisasi hasil. Proyek ini ditujukan untuk memahami penerapan algoritma supervised learning dalam dunia nyata.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="/img/hasil cluster.png" class="card-img-top clickable-img"
+               alt="Hasil Clustering" data-bs-toggle="modal" data-bs-target="#clusteringModal" style="height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title text-pink">Hasil Clustering</h5>
+            <p class="card-text">
+              Proyek ini berfokus pada pengelompokan data menggunakan algoritma K-Means. Data yang telah dianalisis dikelompokkan berdasarkan kemiripan fitur tertentu untuk menemukan pola tersembunyi dalam dataset. Hasil clustering divisualisasikan menggunakan Matplotlib dan Seaborn, sehingga memudahkan dalam memahami struktur kelompok dan distribusi data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Project 1 -->
+  <div class="modal fade" id="dashboardModal" tabindex="-1" aria-labelledby="dashboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white border-pink rounded-4 p-3">
+        <div class="modal-body text-center">
+          <img src="/img/dashboard interaktif.png" class="img-fluid modal-img" alt="Dashboard Interaktif">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Project 2 -->
+  <div class="modal fade" id="klasifikasiModal" tabindex="-1" aria-labelledby="klasifikasiModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white border-pink rounded-4 p-3">
+        <div class="modal-body text-center">
+          <img src="/img/klasifikasi data.jpg" class="img-fluid modal-img" alt="Klasifikasi Data">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Project 3 -->
+  <div class="modal fade" id="clusteringModal" tabindex="-1" aria-labelledby="clusteringModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-white border-pink rounded-4 p-3">
+        <div class="modal-body text-center">
+          <img src="/img/hasil cluster.png" class="img-fluid modal-img" alt="Hasil Clustering">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- akhir portofolio -->
+
+
+<!-- Prestasi -->
+<section id="prestasi" class="prestasi-section py-5">
+  <div class="container">
+    <h2 class="text-center text-matcha mb-5">Prestasi</h2>
+    <div class="row">
+
+      <!-- Prestasi 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="img/3-JUARA TIGA - Y9 - Shofi Shulhiyana_signed.jpg" class="card-img-top clickable-img" alt="Prestasi 1"
+               data-bs-toggle="modal" data-bs-target="#prestasiModal1">
+          <div class="card-body">
+            <h5 class="card-title text-matcha">Juara 3 Showcase Hackathon Women in Tech: Python and Cybersecurity 2023</h5>
+            <p class="card-text">Meraih juara 3 dalam ajang Showcase Hackathon Women in Tech: Python and Cybersecurity 2023 yang diselenggarakan pada tahun 2023 oleh Digital Talent Scholarship – Thematic Academy. Kompetisi ini menguji kemampuan dalam pemrograman Python dan keamanan siber.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prestasi 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="img/PMM.jpg" class="card-img-top clickable-img" alt="Prestasi 2"
+               data-bs-toggle="modal" data-bs-target="#prestasiModal2">
+          <div class="card-body">
+            <h5 class="card-title text-matcha">PMM 4 awardee di Udayana University</h5>
+            <p class="card-text">Menerima kesempatan untuk mengikuti program Pertukaran Mahasiswa Merdeka (PMM) selama kurang lebih enam bulan di Universitas Udayana, Bali pada tahun 2024. Program ini memberikan pengalaman belajar lintas budaya dan memperluas wawasan akademik serta sosial.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prestasi 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="img/Sertifikat SOTM 2023 - Shofi Shulhiyana.jpg" class="card-img-top clickable-img" alt="Prestasi 3"
+               data-bs-toggle="modal" data-bs-target="#prestasiModal3">
+          <div class="card-body">
+            <h5 class="card-title text-matcha">Staff Terbaik Bulanan: Proaktif</h5>
+            <p class="card-text">Diberikan penghargaan sebagai Staff of The Month atas kontribusi luar biasa selama satu bulan penuh di HIMSIKA. Penghargaan ini diberikan karena sikap proaktif dan komitmen tinggi dalam menjalankan tanggung jawab serta mendorong kemajuan organisasi.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Prestasi 1 -->
+  <div class="modal fade" id="prestasiModal1" tabindex="-1" aria-labelledby="prestasiModal1Label" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body text-center">
+          <img src="img/3-JUARA TIGA - Y9 - Shofi Shulhiyana_signed.jpg" class="img-fluid rounded" alt="Prestasi 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Prestasi 2 -->
+  <div class="modal fade" id="prestasiModal2" tabindex="-1" aria-labelledby="prestasiModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body text-center">
+          <img src="img/PMM.jpg" class="img-fluid rounded" alt="Prestasi 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Prestasi 3 -->
+  <div class="modal fade" id="prestasiModal3" tabindex="-1" aria-labelledby="prestasiModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body text-center">
+          <img src="img/Sertifikat SOTM 2023 - Shofi Shulhiyana.jpg" class="img-fluid rounded" alt="Prestasi 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- akhir prestasi -->
+
+
+
+<!-- Contact -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center text-pink mb-4">Contact Me</h2>
+
+    <!-- Form Kontak -->
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Nama</label>
+        <input type="text" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Pesan</label>
+        <textarea class="form-control" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+    <!-- akhir form kontak -->
+
+        <!-- Informasi Kontak -->
+        <div class="row text-center mt-5 contact-info">
+          <div class="col-md-4 mb-3">
+            <h5>Email</h5>
+            <p>shofishulhiyana6@email.com</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Telepon</h5>
+            <p>+62 896 1292 8898</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Alamat</h5>
+            <p>Jl. HS. Ronggo Waluyo No. 94, Karawang, Indonesia</p>
+          </div>
+        </div>
+        <!-- akhir informasi kontak -->
+
+    <!-- Tombol ke Beranda -->
+    <div class="text-center mt-4">
+      <a href="#beranda" class="btn-kembali">Kembali ke Beranda</a>
+    </div>
+  </div>
+</section>
+<!-- akhir contact -->
+
+<footer class="text-center py-4 mt-5 bg-matcha">
+  <p class="mb-0">© 2025 Shofi Shulhiyana. All rights reserved.</p>
+</footer>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+
+
+  <!-- JS Bootstrap dan Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
